@@ -32,6 +32,13 @@ git branch -D <name> 删除本地分支
 git push -D <origin> <>
 
 git merge <branch> 
+
+1. git remote add origin <pathspec> 本地仓库和远程仓库配置
+2. git add .
+3. git commit -m 'init'
+4. git pull origin master
+
+
 ```
 - git reset --参数 
 - 三种参数
