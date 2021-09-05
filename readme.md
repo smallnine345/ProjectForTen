@@ -31,7 +31,7 @@ git checkout -b <name> 创建并切换分支
 git branch -D <name> 删除本地分支
 git push -D <origin> <>
 
-git merge <name> 
+git merge <branch> 
 ```
 - git reset --参数 
 - 三种参数
