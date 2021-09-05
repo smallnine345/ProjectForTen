@@ -7,8 +7,27 @@ git commit -m 'add get command'
 git clone(克隆仓库)
 get add . (一次性把所有文件提交到暂存区)
 git push <remote><branch>(提交内容到远程仓库)
-git status(查看当前文件的状态)
+git status(查看当前文件的状态,监听三区的关系)
+git checkout <pathspec>(花式撤销，作用不大)
+git reset HEAD 把暂存区的文件踢出暂存区
+git reset HEAD <pathspec> 把暂存区指定的文件踢出暂存区
+git reset --hard HEAD^ 跳到上一版本
+git reset --hard HEAD^^ 往前跳两个版本
+git reset --hard HEAD~5 向前跳5个版本
+git reset --hard 213dd1a 跳到指定版本
+git reflog(查看修改过的所有版本)
+
+git rebase -i HEAD~3 最近三次提交的版本进行合并
 ```
+- git reset --参数 
+- 三种参数
+1. hard
+- 回退全部，包括HEAD，index，working tree
+2. mixed（默认值）
+- 回退部分，包括HEAD，index
+3. soft 
+- 只回退HEAD
+
 
 ## 添加一个HTML文件
 
