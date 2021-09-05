@@ -6,7 +6,7 @@ git commit -m 'init'(提交到本地仓库)
 git commit -m 'add get command'
 git clone(克隆仓库)
 get add . (一次性把所有文件提交到暂存区)
-git push <remote><branch>(提交内容到远程仓库)
+git push origin master (<remote><branch>(提交内容到远程仓库) 远程名字+分支名)
 git status(查看当前文件的状态,监听三区的关系)
 git checkout <pathspec>(花式撤销，作用不大)
 git reset HEAD 把暂存区的文件踢出暂存区
@@ -16,8 +16,20 @@ git reset --hard HEAD^^ 往前跳两个版本
 git reset --hard HEAD~5 向前跳5个版本
 git reset --hard 213dd1a 跳到指定版本
 git reflog(查看修改过的所有版本)
-
+git diff(比较工作区与暂存区的差异)
+git diff --cached (比较暂存区与本地版本库中最近一次commit的内容)
+git diff HEAD(比较工作区与本地版本库中最近一次commit的内容)
+git diff <commit-id> <commit-id>(比较两个commit之间的差异)
 git rebase -i HEAD~3 最近三次提交的版本进行合并
+1. 修改成s，修改2个
+2. :wq 退出
+
+git branch 查看分支
+git branch <name> 创建新分支
+git checkout <name> 切换分支
+git checkout -b <name> 创建并切换分支
+git branch -d <name> 删除本地分支
+git push -d <origin> <>
 ```
 - git reset --参数 
 - 三种参数
