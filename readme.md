@@ -1,10 +1,13 @@
 # git的日常
 ```
 git config
-git add
-git commit 
-git commit -m 'init'
-git commit -m 'add get comand'
+git add <pathspec>(提交到暂存区staged)
+git commit -m 'init'(提交到本地仓库)
+git commit -m 'add get command'
+git clone(克隆仓库)
+get add . (一次性把所有文件提交到暂存区)
+git push <remote><branch>(提交内容到远程仓库)
+git status(查看当前文件的状态)
 ```
 
 ## 添加一个HTML文件
@@ -52,3 +55,6 @@ a-->|commit|b(committed)-->|edit files|c
 9. 若一次性修改了多个文件
 **git add .**
 **git commit -m 'add a command'**
+10. commit中的-m是什么意思（msg，备注一下本次提交版本的一些备注信息）
+
+
